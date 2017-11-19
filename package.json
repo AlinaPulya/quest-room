@@ -1,0 +1,19 @@
+{
+  "name": "quest-room",
+  "version": "1.0.0",
+  "description": "Project for experimental task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaPulya/quest-room.git"
+  },
+  "author": "Alina Andrushkevych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaPulya/quest-room/issues"
+  },
+  "homepage": "https://github.com/AlinaPulya/quest-room#readme"
+}
