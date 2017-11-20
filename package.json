@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlinaPulya/quest-room/issues"
   },
-  "homepage": "https://github.com/AlinaPulya/quest-room#readme"
+  "homepage": "https://github.com/AlinaPulya/quest-room#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
