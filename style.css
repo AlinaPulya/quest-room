@@ -1,9 +1,62 @@
+body{
+  width: 100%;
+  height: 100%;
+}
 .item{
     background: #333;
     text-align: center;
-    height: 300px !important;
+    height: 200px;
 }
-.carousel{
-    margin-top: 20px;
-    width: 400px;
+.carousel-inner{
+    width: inherit;
+}
+.container-fluid{
+}
+p{
+  padding: 5px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrapperMenu{
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background-color: #66CCFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.wrapperMenu li{
+  border-right: 2px solid white;
+}
+.wrapperMenu li:last-child{
+  border-right: none;
+}
+ul.subMenu {
+    display: none;
+    position: absolute;
+    background-color: #66CCFF;
+}
+ul.subMenu > li {
+    display: block;
+    border: none;
+    width: inherit;
+}
+ul.subMenu > li > a {
+    display: inline-block;
+    color: blue;
+    background-color: #66CCFF;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+ul.menu > li:hover > ul.subMenu {
+    display: block;
+    z-index: 1000;
 }
