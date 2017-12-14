@@ -1,0 +1,26 @@
+/*                     styles for table                        */
+table{
+  align-items: center;
+  border: 2;
+  height: 300px;
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  color: white;
+  border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+  border: 1px solid white; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+
+}
+/***************************************************************/
+/*             styles for wrapperReservation content           */
+.wrapperReservation{
+  align-items: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+/***************************************************************/
+/*                     styles for footer                       */
+footer{
+  height: 45px;
+}
+/***************************************************************/
