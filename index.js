@@ -11,7 +11,7 @@ let Quests = [ {
    link: `pages/hogwarts_page.html`
 },
 {
-  thumbnail:  `img/thumbnails/lord_of_the_rings.jpg`,
+  thumbnail:  `img/thumbnails/lord.jpg`,
   title: `Властелин колец`,
   description: `Всё началось с отливки великих Колец. Три из них были отданы
   бессмертным эльфам, семь — пещерным гномам, а девять — королям
