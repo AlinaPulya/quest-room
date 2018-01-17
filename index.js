@@ -8,7 +8,7 @@ let Quests = [ {
    Она наказывает всех по любому пустяку, кто не симпатизирует
    темным силам, а также садит в темницу школы всех несогласных
    с ней.`,
-   link: `hogwarts_page.html`
+   link: `pages/hogwarts_page.html`
 },
 {
   thumbnail:  `img/thumbnails/lord_of_the_rings.jpg`,
@@ -16,7 +16,7 @@ let Quests = [ {
   description: `Всё началось с отливки великих Колец. Три из них были отданы
   бессмертным эльфам, семь — пещерным гномам, а девять — королям
    людского рода.`,
-   link: `lord_page.html`
+   link: `pages/lord_page.html`
 },
 {
   thumbnail:  `img/thumbnails/aliceinwonderland.jpg`,
@@ -26,7 +26,7 @@ let Quests = [ {
   Яркая, красочная, необычная, местами даже безумная комната
   по мотивам одноименной сказки Л. Кэрролла. Невероятная локация,
   которая понравится и детям, и взрослым.`,
-  link: `alice_page.html`
+  link: `pages/alice_page.html`
 },
 {
   thumbnail:  `img/thumbnails/pirates.jpg`,
@@ -35,7 +35,7 @@ let Quests = [ {
  нового капитана. Молодой Уил Тернер проткнул кинжалом сердце Дейви
  Джонса и этим обрек себя на вечное плавание на борту корабля
  в качестве капитана!`,
-  link: `pirates_page.html`
+  link: `pages/pirates_page.html`
 }
 ];
 
@@ -55,13 +55,13 @@ class Quest{
   }
 }
 
-function createBook (elem) {
+function createQuest (elem) {
     const parentElem = document.getElementById('appearQuestCards');
-    let elementBook = document.createElement('div');
+    let elementQuest = document.createElement('div');
 
-    elementBook.className = 'col-md-4';
-    elementBook.innerHTML = elem;
-    parentElem.appendChild(elementBook);
+    elementQuest.className = 'col-md-4';
+    elementQuest.innerHTML = elem;
+    parentElem.appendChild(elementQuest);
 }
 
 function ready() {
@@ -70,17 +70,17 @@ function ready() {
 
       let questElement = new Quest(quest.thumbnail, quest.title, quest.description, quest.link);
 
-      createBook(questElement.getBlock());
+      createQuest(questElement.getBlock());
       quests.push(questElement);
     }
-    for(let quest of Array.from(Quests))
-    {
-
-      let questElement = new Quest(quest.thumbnail, quest.title, quest.description);
-
-      createBook(questElement.getBlock());
-      quests.push(questElement);
-    }
+    // for(let quest of Array.from(Quests))
+    // {
+    //
+    //   let questElement = new Quest(quest.thumbnail, quest.title, quest.description);
+    //
+    //   createQuest(questElement.getBlock());
+    //   quests.push(questElement);
+    // }
 }
 
 document.addEventListener('DOMContentLoaded', ready);
