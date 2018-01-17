@@ -103,5 +103,6 @@ ul.menu > li:hover > ul.subMenu {
 /*                     styles for footer                       */
 footer{
   height: 45px;
+  bottom: 0;
 }
 /***************************************************************/
