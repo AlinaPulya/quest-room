@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/quest_page_style.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+
+    <title>Quest room</title>
+</head>
+<body>
+  <header class="headerSlider">
+    <div class="wrapperSlider" id="top_nav">
+      <div class="container-fluid">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active slide_1">
+                  <!--<img class="d-block w-100" src="img\slide\slide_1.jpg" alt="First slide">-->
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Квест-комната Хогвартс</h3>
+                  </div>
+                </div>
+                <div class="item slide_2">
+                  <!--<img src="img\slide\slide_2.jpeg" alt="Second slide">-->
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Квест-комната Метро</h3>
+                  </div>
+                </div>
+                <div class="item slide_3">
+                  <!--<img src="img\slide\slide_3.jpg" alt="Third slide">-->
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Квест-комната Больница</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </header>
+  <section>
+    <header>
+       <div class="row wrapperMenu">
+         <ul class="menu nav nav-pills">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="#">Меню</a>
+              <ul class="subMenu nav">
+                <li><a href="#">Квест под заказ</a></li>
+                <li><a href="../reservation_page.html">Бронирование квеста</a></li>
+                <li><a href="#">Подарочный сертификат</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+         </ul>
+       </div>
+    </header>
+    <article>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Квест-комната Хогвартс</li>
+        </ol>
+      </nav>
+      <div class="wrapperQuestName">
+        <p>Хогвартс
+        </p>
+      </div>
+      <div class="wrapperQuestContent container-fluid">
+        <div class="row">
+          <div class="col-md-6 card">
+            <img class="card-img-top" src="../img/thumbnails/h.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-information">
+                Сейчас не лучшие времена для Хогвартса. Министерство Магии сместило
+                с должности директора школы профессора Альбуса Дамблдора, и теперь
+                этот пост занимает Долорес Амбридж. Она наказывает всех по любому
+                пустяку, кто не симпатизирует темным силам, а также садит в темницу
+                школы всех несогласных с ней.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">Время прохождения: 60 мин.</li>
+              <li class="list-group-item">Количество участников: 2-5 чел.</li>
+              <li class="list-group-item">Пятый участник: +150 грн./чел.</li>
+              <li class="list-group-item">Сложность комнаты:  сложная, линейный квест</li>
+            </ul>
+          </div>
+        </div>
+       </div>
+     </article>
+    </section>
+    <footer>
+      Made in Kyiv
+    </footer>
+</body>
+</html>

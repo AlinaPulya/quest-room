@@ -1,0 +1,9 @@
+.card-information{
+  color: white;
+  text-align: justify;
+}
+.wrapperQuestName{
+  font: small-caps bold semi-condensed 28px/32px Arial;
+  text-align: center;
+  color: rgba(133,102,255,255);
+}
