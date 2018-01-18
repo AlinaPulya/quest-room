@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/index.js" type="text/javascript"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 
@@ -53,27 +54,37 @@
     <header>
        <div class="row wrapperMenu">
          <ul class="menu nav nav-pills">
-            <li><a href="index.html">Главная</a></li>
+            <li><a href="../index.html">Главная</a></li>
             <li><a href="#">Меню</a>
               <ul class="subMenu nav">
                 <li><a href="#">Квест под заказ</a></li>
-                <li><a href="pages/reservation_page.html">Бронирование квеста</a></li>
+                <li><a href="../pages/reservation_page.html">Бронирование квеста</a></li>
                 <li><a href="#">Подарочный сертификат</a></li>
               </ul>
             </li>
-            <li><a href="pages/gallery.html">Галерея</a></li>
+            <li><a href="../pages/gallery.html">Галерея</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Отзывы</a></li>
          </ul>
        </div>
     </header>
     <article>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Галерея</li>
+        </ol>
+      </nav>
       <div class="wrapperContent">
-         <div class="container container-fluid containerQuestCards">
-           <div id="appearQuestCards" class="row">
-           </div>
-         </div>
-       </div>
+        <div id="gall">
+          <img src="../img/thumbnails/h.jpg" tabindex="0" border="3"/>
+          <img src="../img/thumbnails/hog.jpg" tabindex="0" border="3"/>
+          <img src="../img/thumbnails/lord.jpg" tabindex="0" border="3"/>
+          <img src="../img/thumbnails/pirates.jpg" tabindex="0" border="3"/>
+          <img src="../img/thumbnails/aliceinwonderland.jpg" tabindex="0" border="3"/>
+          <div></div>
+        </div>
+      </div>
      </article>
     </section>
     <footer>
